@@ -40,7 +40,7 @@ build_db:
 	-f Dockerfile_db \
 	.
 
-start_db: run_web
+start: start_db start_web
 
 start_db: 
 	docker rm db
