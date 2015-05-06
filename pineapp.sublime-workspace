@@ -1,0 +1,784 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"djan",
+				"django-uwsgi-nginx/"
+			],
+			[
+				"build",
+				"build_db"
+			],
+			[
+				"GHP",
+				"GHP-IMPORT"
+			],
+			[
+				"execut",
+				"execution_count"
+			],
+			[
+				"H",
+				"HomePageView	class"
+			],
+			[
+				"BASE",
+				"BASE_DIR"
+			],
+			[
+				"Xe",
+				"XeLaTeX"
+			],
+			[
+				"pand",
+				"PANDOC"
+			],
+			[
+				"in",
+				"index"
+			],
+			[
+				"apply",
+				"applymap	function"
+			],
+			[
+				"read",
+				"readlines	function"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Markdown Preview/Markdown.sublime-build",
+					""
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				],
+				[
+					"Packages/User/landslide_parentdir.sublime-build",
+					""
+				],
+				[
+					"Packages/User/make_upload.sublime-build",
+					""
+				],
+				[
+					"Packages/User/pandoc_reveal.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Markdown Preview/Markdown.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"last_filter": "package",
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: List Unmanaged Packages"
+			],
+			[
+				"make git",
+				"Makefile (cfriedline.github.com): make github"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"make g",
+				"Makefile (cfriedline.github.com): make github"
+			],
+			[
+				"git ad",
+				"Git: Add Current File"
+			],
+			[
+				"make githu",
+				"Makefile (cfriedline.github.com): make github"
+			],
+			[
+				"upgrad",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"comment",
+				"Toggle Comment"
+			],
+			[
+				"build",
+				"Build With: Markdown"
+			],
+			[
+				"buil",
+				"Build With: Markdown"
+			],
+			[
+				"upgr",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"upga",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"upgrae",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"upgra",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"upgrade",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"package up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"pacakge upgr",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"gitq",
+				"Git: Quick Commit"
+			],
+			[
+				"quic",
+				"Git: Quick Commit"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"mode",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"pack",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"qu",
+				"Git: Quick Commit"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"quick",
+				"Git: Quick Commit"
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"upg",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"ugprade",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"open finder",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"git st",
+				"Git: Show Tags"
+			],
+			[
+				"packa",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"pack up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"qui",
+				"Git: Quick Commit"
+			],
+			[
+				"git qui	",
+				"Git: Quick Commit"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git",
+				"Git: Status"
+			],
+			[
+				"commt",
+				"Git: Commit"
+			],
+			[
+				"commit",
+				"Git: Commit"
+			],
+			[
+				"git sta",
+				"Git: Status"
+			],
+			[
+				"pand",
+				"Pandoc"
+			],
+			[
+				"pandoc",
+				"Pandoc"
+			],
+			[
+				"pando",
+				"Pandoc"
+			],
+			[
+				"instal pack",
+				"Package Control: Install Package"
+			],
+			[
+				"delete",
+				"ANF: Delete File"
+			],
+			[
+				"new",
+				"ANF: New File"
+			],
+			[
+				"gitignore",
+				"Gitignore: New gitignore"
+			],
+			[
+				"pelican",
+				"Pelican: New Article (Markdown)"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"makefile",
+				"Set Syntax: Makefile"
+			],
+			[
+				"package ins",
+				"Package Control: Install Package"
+			],
+			[
+				"diff",
+				"Git: Diff Current File"
+			],
+			[
+				"instll",
+				"Package Control: Install Package"
+			],
+			[
+				"install pack",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"uick",
+				"Git: Quick Commit"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"make",
+				"Set Syntax: Makefile"
+			],
+			[
+				"cance",
+				"Build: Cancel"
+			],
+			[
+				"cancel",
+				"Build: Cancel"
+			],
+			[
+				"ipyth",
+				"Open IPython Notebook"
+			],
+			[
+				"git qui",
+				"Git: Quick Commit"
+			],
+			[
+				"branch",
+				"Git: Change Branch"
+			],
+			[
+				"fetch",
+				"Git: Fetch"
+			],
+			[
+				"git st ",
+				"Git: Status"
+			],
+			[
+				"github",
+				"Github: Repository"
+			],
+			[
+				"Snippet: item",
+				"Snippet: Itemize"
+			],
+			[
+				"isntall",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"insatl",
+				"Package Control: Install Package"
+			],
+			[
+				"packageres",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"theme",
+				"SublimeLinter: Choose Gutter Theme"
+			],
+			[
+				"latex",
+				"LaTeXTools: Reconfigure and migrate settings"
+			],
+			[
+				"open",
+				"Open IPython Notebook"
+			]
+		],
+		"width": 579.0
+	},
+	"console":
+	{
+		"height": 305.0,
+		"history":
+		[
+			"view.settings().get('syntax')",
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/chris/src/pineapp_docker",
+		"/Users/chris/src/django-uwsgi-nginx"
+	],
+	"file_history":
+	[
+		"/Users/chris/src/pineapp_docker/Dockerfile_db",
+		"/Users/chris/src/pineapp_docker/pineapp.sublime-project",
+		"/Users/chris/src/pineapp_docker/Dockerfile_web",
+		"/Users/chris/src/pineapp_docker/Dockerfile_base",
+		"/Users/chris/src/pineapp_docker/makefile",
+		"/Users/chris/src/pineapp_docker/Dockerfile",
+		"/Users/chris/src/pineapp_docker/dockerfile",
+		"/Users/chris/src/pineapp_docker/docker-compose.yml",
+		"/Users/chris/src/pineapp_docker/requirements.txt",
+		"/Users/chris/src/pineapp_docker/pineapp/pineapp/settings.py",
+		"/Users/chris/Downloads/Torrents/win81.txt",
+		"/Users/chris/Dropbox/Documents/science/cv/.git/COMMIT_EDITMSG",
+		"/Users/chris/Library/Application Support/Sublime Text 3/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
+		"/Users/chris/Library/Application Support/Sublime Text 3/Packages/User/Pelican.sublime-settings",
+		"/Users/chris/src/cfriedline.github.com/content/pages/about.md",
+		"/Users/chris/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/MultiMarkdown.sublime-settings",
+		"/Users/chris/Library/Application Support/Sublime Text 3/Packages/Pelican/Pelican.sublime-settings",
+		"/Users/chris/src/cfriedline.github.com/Makefile",
+		"/Users/chris/src/cfriedline.github.com/.git/COMMIT_EDITMSG",
+		"/Users/chris/src/cfriedline.github.com/content/pages/publications.md",
+		"/Users/chris/Downloads/bcftools-1.2/INSTALL",
+		"/Users/chris/src/git/.git/MERGE_MSG",
+		"/Users/chris/.zprezto/.git/COMMIT_EDITMSG",
+		"/Users/chris/src/pineapp/pineapp/settings.py",
+		"/Users/chris/src/pineapp/makefile",
+		"/Users/chris/Dropbox/Documents/science/postdoc/gis/ipynb/gps/friedline_FL_2014.txt",
+		"/Users/chris/Dropbox/Documents/science/cv/.gitignore",
+		"/Users/chris/Dropbox/Documents/science/cv/moderncvstyleclassic.sty",
+		"/Users/chris/.fontconfig/fonts.conf",
+		"/var/folders/_8/hgx0kq1j3m10dyjq912_943c0000gn/T/zshDkKjFA",
+		"/var/folders/_8/hgx0kq1j3m10dyjq912_943c0000gn/T/zshzKZDTp",
+		"/Users/chris/Dropbox/Documents/science/cv/makefile",
+		"/Users/chris/Library/Application Support/Sublime Text 3/Packages/User/MarkdownPreview.sublime-settings",
+		"/Users/chris/Dropbox/Documents/science/postdoc/papers/foxtail_linkage/manuscript_proof.md",
+		"/Users/chris/Dropbox/Documents/science/postdoc/papers/black_spruce/revigo_needle-all_sig.txt",
+		"/Users/chris/Dropbox/Documents/science/postdoc/papers/black_spruce/revigo_needle-dge_sig.txt",
+		"/Users/chris/Dropbox/Documents/science/postdoc/papers/black_spruce/revigo_cambium-all.txt",
+		"/Users/chris/.ssh/config",
+		"/Users/chris/Downloads/GraphCGW_T (1).C",
+		"/Users/chris/Dropbox/Documents/science/postdoc/papers/black_spruce/.git/COMMIT_EDITMSG",
+		"/Users/chris/Dropbox/Documents/science/postdoc/papers/black_spruce/blast2go_graph_20150402_1137_cambium.bp.txt",
+		"/Users/chris/Dropbox/Documents/science/postdoc/papers/black_spruce/.gitignore",
+		"/Users/chris/Dropbox/Documents/science/postdoc/papers/black_spruce/blast2go_annot_20150330_1039.annot",
+		"/Users/chris/Dropbox/Documents/science/postdoc/papers/black_spruce/blast2go_annotdescriptions_20150402_1059.txt",
+		"/Users/chris/Dropbox/Documents/science/postdoc/papers/black_spruce/blast2go_gff_export_20150402_1100.gff",
+		"/Users/chris/Downloads/SearchOok_results_for_ bergstrom.txt",
+		"/Users/chris/books.txt",
+		"/Users/chris/Downloads/SearchOok_results_for_ evolution.txt",
+		"/Users/chris/Downloads/SearchBot_results_for_ barton.txt",
+		"/Users/chris/.zprezto/makefile",
+		"/Users/chris/src/dotfiles/.git/COMMIT_EDITMSG",
+		"/Applications/Blast2GO/Blast2GO.app/Blast2GO",
+		"/Users/chris/Downloads/Crack Tool v15.32 - Razor1911/README.txt",
+		"/Users/chris/Downloads/Torrents/Adobe.Photoshop.Lightroom.v5.7.Multilingual.MacOSX.Incl.Keymaker-CORE/core.nfo",
+		"/Users/chris/Dropbox/Documents/science/postdoc/papers/black_spruce/topGO_blast2go_export_20150330_1608.txt",
+		"/Users/chris/Dropbox/Documents/science/postdoc/papers/black_spruce/cambium_dge_HK48M6M6016-Alignment.xml",
+		"/Users/chris/Dropbox/Documents/science/postdoc/papers/black_spruce/all_filtered_plants_30_30_annot_GOs_20140916_1726.txt_topGO.txt",
+		"/Users/chris/Dropbox/Documents/science/postdoc/papers/black_spruce/topGO_blast2go_export_20150330_1045.txt",
+		"/Users/chris/Downloads/Additional_file_10_GO_transcript_annots 2.txt",
+		"/Users/chris/.gitconfig",
+		"/Users/chris/Dropbox/Documents/science/postdoc/papers/black_spruce/.gitconfig",
+		"/Users/chris/src/cfriedline.github.com/content/winter-school-in-weggis.md",
+		"/Users/chris/Dropbox/Documents/science/postdoc/papers/black_spruce/.git/MERGE_MSG",
+		"/Users/chris/Dropbox/Documents/science/postdoc/papers/black_spruce/manuscript/.gitattributes",
+		"/Users/chris/Dropbox/Documents/science/postdoc/papers/black_spruce/manuscript/.gitconfig",
+		"/Users/chris/Dropbox/Documents/science/postdoc/papers/black_spruce/makefile",
+		"/Users/chris/Dropbox/Documents/science/postdoc/papers/black_spruce/manuscript/black_spruce.md",
+		"/Users/chris/.zshrc",
+		"/Users/chris/Downloads/Torrents/Adobe Acrobat XI Pro 11.0.3 Multilanguage Mac OS X [ChingLiu]/Crack-OSX/install.txt",
+		"/Users/chris/bin/nbstripout",
+		"/Users/chris/.hem/profile/godel22",
+		"/Users/chris/.hem/profile/hem.log",
+		"/Users/chris/.hem/config",
+		"/usr/local/MacGPG2/libexec/fixGpgHome",
+		"/Library/Application",
+		"/Users/chris/Support/GPGTools/org.gpgtools.Libmacgpg.xpc",
+		"/Users/chris/Downloads/gmail-backup-20110307/gmail-backup-gui.py",
+		"/Users/chris/Downloads/DigitalGlue/GmailVault/gmailvault.sh",
+		"/Users/chris/.ipython/profile_chris/static/custom/custom.js",
+		"/Users/chris/Dropbox/Documents/science/congenomics_2015/README.md",
+		"/Users/chris/Dropbox/Documents/science/congenomics_2015/.git/COMMIT_EDITMSG",
+		"/Users/chris/Dropbox/Documents/science/congenomics_2015/makefile",
+		"/Users/chris/Dropbox/Documents/science/congenomics_2015/.gitignore",
+		"/Users/chris/Downloads/surface3d_demo.py",
+		"/Volumes/congen/ipython/bayenv/matrix_last.out",
+		"/Volumes/congen/bayenv",
+		"/Users/chris/Dropbox/Documents/science/congenomics_2015/.tpbuild",
+		"/Users/chris/Downloads/Isa_files/chtdic11ast_run.R",
+		"/Users/chris/Dropbox/Documents/science/congenomics_2015/slides/makefile",
+		"/Volumes/congen/.zshrc",
+		"/Volumes/congen/.bashrc",
+		"/Volumes/congen/.Rhistory",
+		"/Volumes/congen/.Xauthority",
+		"/Volumes/congen/.bash_history",
+		"/Volumes/congen/.bash_logout",
+		"/Volumes/congen/.bash_profile",
+		"/Volumes/congen/.lesshst",
+		"/Volumes/congen/.tmux.conf",
+		"/Volumes/congen/.viminfo",
+		"/Volumes/congen/.zcompdump",
+		"/Volumes/congen/.zhistory",
+		"/Volumes/congen/.zlogin",
+		"/Volumes/congen/.zlogout",
+		"/Volumes/congen/.zpreztorc",
+		"/Volumes/congen/.zprofile",
+		"/Volumes/congen/.zshenv",
+		"/Users/chris/anaconda/envs/conda/lib/python2.7/site-packages/ipython-3.0.0.dist-info/top_level.txt",
+		"/private/var/folders/_8/hgx0kq1j3m10dyjq912_943c0000gn/T/ca465832-5a2e-426d-9b2c-75f6feaf8e1f/gdc_home4/cfried/.ipython/profile_gdcsrv2/ipengine_config.py",
+		"/private/var/folders/_8/hgx0kq1j3m10dyjq912_943c0000gn/T/ca465832-5a2e-426d-9b2c-75f6feaf8e1f/gdc_home4/cfried/.ipython/profile_gdcsrv2/ipcluster_config.py",
+		"/Users/chris/.hem/profile/congen",
+		"/Users/chris/Downloads/landscape_genetics_data/README.txt",
+		"/Users/chris/Dropbox/Documents/science/congenomics_2015/slides/bayenv.txt",
+		"/Users/chris/src/PolygenicAdaptationCode/Example/Genome_Data/genome.file.txt",
+		"/Users/chris/src/PolygenicAdaptationCode/Example/Genome_Data/match.file.txt",
+		"/Users/chris/Dropbox/Documents/science/congenomics_2015/slides/squat/squat_pinitol.r",
+		"/Users/chris/Dropbox/Documents/science/congenomics_2015/slides/squat/pinitol_freqs_file.txt",
+		"/Users/chris/Dropbox/Documents/science/congenomics_2015/slides/squat/pinitol_gwas_data_file.txt",
+		"/Users/chris/Dropbox/Documents/science/congenomics_2015/slides/squat/pinitol_full_dataset_file.txt",
+		"/Users/chris/Dropbox/Documents/science/congenomics_2015/slides/squat/pinitol_match_pop_file.txt",
+		"/Volumes/godel/ipynb/gypsy_moth/snpassoc_mass.R",
+		"/Users/chris/Dropbox/Documents/science/congenomics_2015/slides/squat/pinitol_env_var_data_file.txt",
+		"/Volumes/godel/ipynb/gypsy_moth/snpassoc_pupual_duration.R",
+		"/Volumes/godel/ipynb/gypsy_moth/hierfstat_samtools_new.rds",
+		"/Volumes/godel/ipynb/gypsy_moth/session.dill",
+		"/Volumes/godel/.ipython/profile_huge/ipcontroller_config.py",
+		"/Volumes/godel/.ipython/profile_moth/ipcontroller_config.py",
+		"/Volumes/godel/ipynb/gypsy_moth/hdfstorehelper.py",
+		"/Volumes/godel/.ipython/profile_huge/ipengine_config.py"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"slug",
+			".95ex",
+			"cloned surrogate",
+			"barton",
+			"godel19",
+			"gpg-agent",
+			"ssh",
+			"location",
+			".ip",
+			"hub",
+			"ssh",
+			"*",
+			"heartmonitor",
+			" -",
+			"8888",
+			":8000",
+			"block",
+			"additive",
+			"line_ending",
+			"line_endings",
+			"R3",
+			"env}\n\\",
+			"}\n",
+			"{//",
+			"Python"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 100.0
+	},
+	"output.markdown":
+	{
+		"height": 114.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "pineapp.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"snpass",
+				"snpassoc_mass.R"
+			],
+			[
+				"r",
+				"chtdic11ast_run.R"
+			],
+			[
+				"session3tex",
+				"session3.tex"
+			],
+			[
+				"session2tex",
+				"session2.tex"
+			],
+			[
+				"session2",
+				"session2.aux"
+			],
+			[
+				"slides.sub",
+				"slides.sublime-project"
+			],
+			[
+				"session1",
+				"session1.tex"
+			],
+			[
+				"make",
+				"makefile"
+			],
+			[
+				"slides.te",
+				"slides.tex"
+			],
+			[
+				"sess",
+				"session1.tex"
+			],
+			[
+				"refs",
+				"refs.bib"
+			],
+			[
+				"bib",
+				"refs.bib"
+			],
+			[
+				"refer",
+				"references.tex"
+			],
+			[
+				"",
+				"~/src/cfriedline.github.com/Makefile"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 370.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

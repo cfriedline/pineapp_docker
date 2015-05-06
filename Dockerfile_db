@@ -1,0 +1,4 @@
+FROM cfriedline/base:latest
+MAINTAINER Chris Friedline <cfriedline@vcu.edu>
+USER root
+RUN apt-get install postgresql postgresql-contrib -y
