@@ -5,7 +5,7 @@
 			"path": "."
 		},
 		{
-			"path": "/Users/chris/src/django-uwsgi-nginx"
+			"path": "../django-uwsgi-nginx"
 		}
 	]
 }
