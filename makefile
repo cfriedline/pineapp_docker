@@ -22,15 +22,16 @@ build_db:
 
 run: run_web
 
-run_db:
-	docker stop db
-	docker rm db
+run_db: stop_db
 	docker run --name db -d cfriedline/db
 
-run_web: run_db
-	docker stop web
-	docker rm web
-	docker run --name web -p 8000 -d --link db:db cfriedline/web
+run_web: stop_web run_db
+	docker run --name web -P -d --link db:db cfriedline/web
 
 stop_web:
 	docker stop web
+	docker rm web
+
+stop_db:
+	docker stop db
+	docker rm db
