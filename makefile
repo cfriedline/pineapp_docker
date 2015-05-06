@@ -8,8 +8,8 @@ build_base:
 
 build_web:
 	docker build -t cfriedline/web:latest \
-	-f /Users/chris/src/django-uwsgi-nginx/Dockerfile \
-	/Users/chris/src/django-uwsgi-nginx
+	-f ../django-uwsgi-nginx/Dockerfile \
+	../django-uwsgi-nginx
 
 build_db:
 	docker build -t cfriedline/db:latest -f Dockerfile_db .
