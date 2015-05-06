@@ -13,3 +13,16 @@ build_web:
 
 build_db:
 	docker build -t cfriedline/db:latest -f Dockerfile_db .
+
+run: run_web
+
+run_db:
+	@docker rm db
+	docker run --name db -d cfriedline/db
+
+run_web: run_db
+	@docker rm web
+	docker run --name web -d cfriedline/web
+
+stop_web:
+	docker stop web
