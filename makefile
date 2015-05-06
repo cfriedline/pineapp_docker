@@ -1,3 +1,6 @@
+rm_all:
+	docker rm -f `docker ps -q -a`
+
 rmi_all:
 	docker rmi -f `docker images -q`
 
@@ -17,12 +20,14 @@ build_db:
 run: run_web
 
 run_db:
-	@docker rm db
+	docker stop db
+	docker rm db
 	docker run --name db -d cfriedline/db
 
 run_web: run_db
-	@docker rm web
-	docker run --name web -d cfriedline/web
+	docker stop web
+	docker rm web
+	docker run --name web -p 8000 -d --link db:db cfriedline/web
 
 stop_web:
 	docker stop web
