@@ -6,7 +6,7 @@ MAINTAINER Chris Friedline <cfriedline@vcu.edu>
 USER root
 
 # add our user and group first to make sure their IDs get assigned consistently, regardless of whatever dependencies get added
-RUN groupadd -r postgres && useradd -r -g postgres postgres
+RUN groupadd -r postgres && useradd -m -s /bin/bash -r -g postgres postgres
 
 RUN mkdir -p /etc/pki/tls/certs
 RUN ln -s /etc/ssl/certs/ca-certificates.crt /etc/pki/tls/certs/ca-bundle.crt
@@ -39,8 +39,7 @@ RUN apt-get install -y postgresql-common \
 RUN mkdir -p /var/run/postgresql && chown -R postgres /var/run/postgresql
 
 ENV PATH /usr/lib/postgresql/$PG_VERSION/bin:$PATH
-ENV PGDATA /var/lib/postgresql/data
-VOLUME /var/lib/postgresql/data
+ENV PGDATA /dbdata
 
 RUN rm -rf /var/lib/apt/lists/*
 
@@ -50,4 +49,5 @@ RUN chmod +x /docker-entrypoint.sh
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
 EXPOSE 5432
+user root
 CMD ["postgres"]

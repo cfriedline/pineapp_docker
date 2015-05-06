@@ -1,0 +1,10 @@
+from cfriedline/base
+maintainer Chris Friedline <cfriedline@vcu.edu>
+user root
+run mkdir /appdata
+copy uwsgi.ini /home/docker/code/
+copy uwsgi_params /home/docker/code/
+run cp /home/docker/code/uwsgi.ini /appdata/
+run cp /home/docker/code/uwsgi_params /appdata/
+volume /appdata
+cmd /bin/bash 
