@@ -4,6 +4,9 @@ rm_all:
 rmi_all:
 	docker rmi -f `docker images -q`
 
+rmi_untagged:
+	docker rmi $(docker images | grep "^<none>" | awk "{print $3}")
+
 build_all: build_base build_web build_db
 
 build_base:
