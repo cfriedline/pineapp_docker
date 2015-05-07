@@ -1,9 +1,8 @@
-##Build
+##Build from scratch
 
-`make build_all`
+`make init` or `make`
 
 ##Run
 
 `make start`
 
-In order to make it all work, Django and the database need to be configured using appropriate  `make` targets
