@@ -77,7 +77,12 @@ start_web:
 	cfriedline/web:latest
 
 start_admin:
-	docker run -it \
+	./check_docker_container.sh admin; \
+	if [ $$? -eq 2 ]; \
+	then docker rm admin; \
+	fi
+
+	docker run -it --name admin \
 	--volumes-from appdata \
 	--volumes-from dbdata \
 	--link web:web \
