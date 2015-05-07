@@ -19,6 +19,10 @@ run ln -s /appdata/supervisor-app.conf /etc/supervisor/conf.d/
 # run pip install
 copy requirements.txt /home/docker/code/
 run pip install -r /home/docker/code/requirements.txt
+workdir /home/docker
+run git clone https://github.com/django-tastypie/django-tastypie.git
+workdir /home/docker/django-tastypie
+run python setup.py install
 expose 80
 user root
 cmd ["supervisord", "-n"]
