@@ -1,3 +1,4 @@
+uwsgi
 django
 psycopg2
 django-grappelli

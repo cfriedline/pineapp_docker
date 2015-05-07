@@ -4,27 +4,22 @@ maintainer Chris Friedline <cfriedline@vcu.edu>
 
 user root
 
-run apt-get install -y build-essential git
-run apt-get install -y nginx supervisor
-run apt-get install -y postgresql-server-dev-9.4
-run pip install uwsgi
+#run apt-get install -y build-essential git
+run apt-get install -y nginx supervisor postgresql-server-dev-9.4
 
 # setup all the configfiles
 volume /appdata
+
 run echo "daemon off;" >> /etc/nginx/nginx.conf
 run rm /etc/nginx/sites-enabled/default
 run ln -s /appdata/nginx-app.conf /etc/nginx/sites-enabled/
 run ln -s /appdata/supervisor-app.conf /etc/supervisor/conf.d/
 
-# run pip install
-copy requirements.txt /home/docker/code/
-run pip install -r /home/docker/code/requirements.txt
-workdir /home/docker
-run git clone https://github.com/django-tastypie/django-tastypie.git
-workdir /home/docker/django-tastypie
-run python setup.py install
+volume /anaconda
+ENV PATH /anaconda/bin:$PATH
+
+RUN rm -rf /var/lib/apt/lists/*
 expose 80
-user root
 cmd ["supervisord", "-n"]
 
 

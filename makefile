@@ -9,11 +9,11 @@ rmi_all:
 rmi_untagged:
 	docker rmi -f `docker images | grep '^<none>' | awk '{print $$3}'`
 
-build_all: build_data build_app
+build_all: build_data build_app build_admin
 
 build_app: build_base build_web build_db 
 
-build_data: build_appdata build_dbdata
+build_data: build_anaconda build_appdata build_dbdata
 
 build_dbdata: 
 	docker create \
@@ -52,6 +52,13 @@ build_admin:
 	-f Dockerfile_admin \
 	.
 
+build_anaconda:
+	docker build \
+	-t cfriedline/anaconda:latest \
+	-f Dockerfile_anaconda \
+	.
+	docker create --name anaconda cfriedline/anaconda
+
 setup: start_db start_web init_django copy_db restore_db restart
 
 start: start_db start_web
@@ -68,6 +75,7 @@ start_db:
 
 	docker run --name db -d \
 	--volumes-from dbdata \
+	--volumes-from anaconda \
 	-v /Users/chris:/mnt/tmp \
 	cfriedline/db:latest
 
@@ -80,6 +88,7 @@ start_web:
 	docker run --name web -P -d \
 	--link db:db \
 	--volumes-from appdata \
+	--volumes-from anaconda \
 	cfriedline/web:latest
 
 start_admin:
@@ -91,6 +100,7 @@ start_admin:
 	docker run -it --name admin \
 	--volumes-from appdata \
 	--volumes-from dbdata \
+	--volumes-from anaconda \
 	--link web:web \
 	--link db:db \
 	cfriedline/admin \

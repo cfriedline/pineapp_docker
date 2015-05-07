@@ -46,6 +46,12 @@ RUN rm -rf /var/lib/apt/lists/*
 COPY docker-entrypoint.sh /
 RUN chmod +x /docker-entrypoint.sh
 
+
+
+volume /dbdata
+volume /anaconda
+
+ENV PATH /anaconda/bin:$PATH
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
 EXPOSE 5432
