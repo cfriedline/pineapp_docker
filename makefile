@@ -98,6 +98,9 @@ start_admin:
 
 restart: stop start
 
+bounce_web: stop_web start_web
+
+
 stop_web:
 	docker stop web
 	
