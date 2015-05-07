@@ -8,18 +8,16 @@ run apt-get install -y build-essential git
 run apt-get install -y nginx supervisor
 run apt-get install -y postgresql-server-dev-9.4
 run pip install uwsgi
-copy nginx-app.conf /home/docker/code/
-copy supervisor-app.conf /home/docker/code/
-copy requirements.txt /home/docker/code/
-copy uwsgi* /home/docker/code/
 
 # setup all the configfiles
+volume /appdata
 run echo "daemon off;" >> /etc/nginx/nginx.conf
 run rm /etc/nginx/sites-enabled/default
-run ln -s /home/docker/code/nginx-app.conf /etc/nginx/sites-enabled/
-run ln -s /home/docker/code/supervisor-app.conf /etc/supervisor/conf.d/
+run ln -s /appdata/nginx-app.conf /etc/nginx/sites-enabled/
+run ln -s /appdata/supervisor-app.conf /etc/supervisor/conf.d/
 
 # run pip install
+copy requirements.txt /home/docker/code/
 run pip install -r /home/docker/code/requirements.txt
 expose 80
 user root

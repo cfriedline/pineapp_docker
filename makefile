@@ -1,3 +1,5 @@
+init: build_all setup
+
 rm_all:
 	docker rm -f `docker ps -q -a`
 
@@ -7,13 +9,17 @@ rmi_all:
 rmi_untagged:
 	docker rmi -f `docker images | grep '^<none>' | awk '{print $$3}'`
 
-build_all: build_base build_dbdata build_appdata build_web build_db 
+build_all: build_data build_app
+
+build_app: build_base build_web build_db 
+
+build_data: build_appdata build_dbdata
 
 build_dbdata: 
 	docker create \
 	-v /dbdata \
 	--name dbdata \
-	cfriedline/base \
+	ubuntu:15.04 \
 	/bin/bash
 
 build_appdata:
@@ -40,23 +46,23 @@ build_db:
 	-f Dockerfile_db \
 	.
 
+setup: start_db start_web init_django copy_db restore_db restart
+
 start: start_db start_web
 
 start_db: 
-	docker rm db
 	docker run --name db -d \
 	--volumes-from dbdata \
 	-v /Users/chris:/mnt/tmp \
 	cfriedline/db:latest
 
 start_web: 
-	docker rm web
 	docker run --name web -P -d \
 	--link db:db \
 	--volumes-from appdata \
 	cfriedline/web:latest
 
-restart: stop run
+restart: stop start
 
 stop_web:
 	docker stop web
@@ -80,8 +86,6 @@ restore_db:
 	docker exec \
 	db \
 	su - postgres -c "\
-	dropdb pineapp && \
-	dropuser pineapp && \
 	createdb pineapp && \
 	createuser pineapp && \
 	pg_restore -d pineapp /dbdata/pineapp.backup"
@@ -91,4 +95,6 @@ shell_web:
 
 shell_db:
 	docker exec -it db /bin/bash
+
+wipe: stop rmi_all rm_all
 	

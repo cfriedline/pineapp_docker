@@ -1,10 +1,12 @@
-from cfriedline/base
+from ubuntu:15.04
 maintainer Chris Friedline <cfriedline@vcu.edu>
 user root
 run mkdir /appdata
-copy uwsgi.ini /home/docker/code/
-copy uwsgi_params /home/docker/code/
-run cp /home/docker/code/uwsgi.ini /appdata/
-run cp /home/docker/code/uwsgi_params /appdata/
+copy uwsgi.ini /appdata/
+copy uwsgi_params /appdata/
+copy requirements.txt /appdata/
+copy nginx-app.conf /appdata/
+copy supervisor-app.conf /appdata/
+copy docker-entrypoint.sh /appdata/
 volume /appdata
 cmd /bin/bash 
