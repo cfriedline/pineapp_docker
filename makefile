@@ -50,17 +50,40 @@ setup: start_db start_web init_django copy_db restore_db restart
 
 start: start_db start_web
 
+rm_names:
+	docker rm web
+	docker rm db
+
 start_db: 
+	./check_docker_container.sh db; \
+	if [ $$? -eq 2 ]; \
+	then docker rm db; \
+	fi
+
 	docker run --name db -d \
 	--volumes-from dbdata \
 	-v /Users/chris:/mnt/tmp \
 	cfriedline/db:latest
 
 start_web: 
+	./check_docker_container.sh web; \
+	if [ $$? -eq 2 ]; \
+	then docker rm web; \
+	fi
+
 	docker run --name web -P -d \
 	--link db:db \
 	--volumes-from appdata \
 	cfriedline/web:latest
+
+start_admin:
+	docker run -it \
+	--volumes-from appdata \
+	--volumes-from dbdata \
+	--link web:web \
+	--link db:db \
+	cfriedline/base \
+	/bin/bash
 
 restart: stop start
 
