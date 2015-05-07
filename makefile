@@ -46,6 +46,12 @@ build_db:
 	-f Dockerfile_db \
 	.
 
+build_admin:
+	docker build \
+	-t cfriedline/admin:latest \
+	-f Dockerfile_admin \
+	.
+
 setup: start_db start_web init_django copy_db restore_db restart
 
 start: start_db start_web
@@ -87,7 +93,7 @@ start_admin:
 	--volumes-from dbdata \
 	--link web:web \
 	--link db:db \
-	cfriedline/base \
+	cfriedline/admin \
 	/bin/bash
 
 restart: stop start

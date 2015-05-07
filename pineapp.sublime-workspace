@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"check",
+				"check_docker_container"
+			],
+			[
+				"volumes",
+				"volumes-from"
+			],
+			[
+				"copy",
+				"copy_db"
+			],
+			[
+				"init",
+				"init_django"
+			],
+			[
+				"build_db",
+				"build_dbdata"
+			],
+			[
+				"rm",
+				"rm_all"
+			],
+			[
 				"djan",
 				"django-uwsgi-nginx/"
 			],
@@ -87,17 +111,13 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 375.0,
-		"last_filter": "package",
+		"height": 138.0,
+		"last_filter": "push",
 		"selected_items":
 		[
 			[
-				"package",
-				"Package Control: List Unmanaged Packages"
-			],
-			[
-				"make git",
-				"Makefile (cfriedline.github.com): make github"
+				"push",
+				"Git: Push"
 			],
 			[
 				"git com",
@@ -108,12 +128,60 @@
 				"Git: Add Current File"
 			],
 			[
-				"make g",
+				"git ad",
+				"Git: Add Current File"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"pus",
+				"Git: Push"
+			],
+			[
+				"com",
+				"Git: Commit"
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"commi",
+				"Git: Commit"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"comi",
+				"Git: Commit"
+			],
+			[
+				"git ",
+				"Git: Init"
+			],
+			[
+				"package",
+				"Package Control: List Unmanaged Packages"
+			],
+			[
+				"make git",
 				"Makefile (cfriedline.github.com): make github"
 			],
 			[
-				"git ad",
-				"Git: Add Current File"
+				"make g",
+				"Makefile (cfriedline.github.com): make github"
 			],
 			[
 				"make githu",
@@ -168,10 +236,6 @@
 				"Package Control: Upgrade Package"
 			],
 			[
-				"push",
-				"Git: Push"
-			],
-			[
 				"gitq",
 				"Git: Quick Commit"
 			],
@@ -204,16 +268,8 @@
 				"Git: Quick Commit"
 			],
 			[
-				"status",
-				"Git: Status"
-			],
-			[
 				"quick",
 				"Git: Quick Commit"
-			],
-			[
-				"add",
-				"Git: Add..."
 			],
 			[
 				"upg",
@@ -226,10 +282,6 @@
 			[
 				"open finder",
 				"View: Toggle Open Files in Side Bar"
-			],
-			[
-				"git stat",
-				"Git: Status"
 			],
 			[
 				"git st",
@@ -250,10 +302,6 @@
 			[
 				"git qui	",
 				"Git: Quick Commit"
-			],
-			[
-				"git push",
-				"Git: Push"
 			],
 			[
 				"git",
@@ -431,16 +479,32 @@
 	"expanded_folders":
 	[
 		"/Users/chris/src/pineapp_docker",
-		"/Users/chris/src/django-uwsgi-nginx"
+		"/Users/chris/src/pineapp",
+		"/Users/chris/src/pineapp/pineapp"
 	],
 	"file_history":
 	[
-		"/Users/chris/src/pineapp_docker/Dockerfile_db",
-		"/Users/chris/src/pineapp_docker/pineapp.sublime-project",
-		"/Users/chris/src/pineapp_docker/Dockerfile_web",
 		"/Users/chris/src/pineapp_docker/Dockerfile_base",
+		"/Users/chris/src/pineapp_docker/Dockerfile_db",
+		"/Users/chris/src/pineapp_docker/supervisor-app.conf",
+		"/Users/chris/src/pineapp_docker/Dockerfile_web",
+		"/Users/chris/src/pineapp_docker/Dockerfile_appdata",
 		"/Users/chris/src/pineapp_docker/makefile",
+		"/Users/chris/src/pineapp_docker/check_docker_container.sh",
+		"/Users/chris/src/pineapp/pineapp/settings.py",
+		"/Users/chris/src/pineapp_docker/README.md",
 		"/Users/chris/src/pineapp_docker/Dockerfile",
+		"/Users/chris/src/django-uwsgi-nginx/AUTHORS",
+		"/Users/chris/src/django-uwsgi-nginx/uwsgi.ini",
+		"/Users/chris/src/django-uwsgi-nginx/supervisor-app.conf",
+		"/Users/chris/src/pineapp_docker/docker-entrypoint.sh",
+		"/Users/chris/src/django-uwsgi-nginx/Dockerfile_appdata",
+		"/Users/chris/src/pineapp_docker/pineapp.sublime-project",
+		"/Users/chris/src/django-uwsgi-nginx/nginx-app.conf",
+		"/Users/chris/src/django-uwsgi-nginx/requirements.txt",
+		"/Users/chris/src/django-uwsgi-nginx/Dockerfile",
+		"/Users/chris/Dropbox/Documents/science/pineapp.backup",
+		"/Users/chris/src/pineapp_docker/.git/COMMIT_EDITMSG",
 		"/Users/chris/src/pineapp_docker/dockerfile",
 		"/Users/chris/src/pineapp_docker/docker-compose.yml",
 		"/Users/chris/src/pineapp_docker/requirements.txt",
@@ -458,7 +522,6 @@
 		"/Users/chris/Downloads/bcftools-1.2/INSTALL",
 		"/Users/chris/src/git/.git/MERGE_MSG",
 		"/Users/chris/.zprezto/.git/COMMIT_EDITMSG",
-		"/Users/chris/src/pineapp/pineapp/settings.py",
 		"/Users/chris/src/pineapp/makefile",
 		"/Users/chris/Dropbox/Documents/science/postdoc/gis/ipynb/gps/friedline_FL_2014.txt",
 		"/Users/chris/Dropbox/Documents/science/cv/.gitignore",
@@ -548,31 +611,18 @@
 		"/Users/chris/Downloads/landscape_genetics_data/README.txt",
 		"/Users/chris/Dropbox/Documents/science/congenomics_2015/slides/bayenv.txt",
 		"/Users/chris/src/PolygenicAdaptationCode/Example/Genome_Data/genome.file.txt",
-		"/Users/chris/src/PolygenicAdaptationCode/Example/Genome_Data/match.file.txt",
-		"/Users/chris/Dropbox/Documents/science/congenomics_2015/slides/squat/squat_pinitol.r",
-		"/Users/chris/Dropbox/Documents/science/congenomics_2015/slides/squat/pinitol_freqs_file.txt",
-		"/Users/chris/Dropbox/Documents/science/congenomics_2015/slides/squat/pinitol_gwas_data_file.txt",
-		"/Users/chris/Dropbox/Documents/science/congenomics_2015/slides/squat/pinitol_full_dataset_file.txt",
-		"/Users/chris/Dropbox/Documents/science/congenomics_2015/slides/squat/pinitol_match_pop_file.txt",
-		"/Volumes/godel/ipynb/gypsy_moth/snpassoc_mass.R",
-		"/Users/chris/Dropbox/Documents/science/congenomics_2015/slides/squat/pinitol_env_var_data_file.txt",
-		"/Volumes/godel/ipynb/gypsy_moth/snpassoc_pupual_duration.R",
-		"/Volumes/godel/ipynb/gypsy_moth/hierfstat_samtools_new.rds",
-		"/Volumes/godel/ipynb/gypsy_moth/session.dill",
-		"/Volumes/godel/.ipython/profile_huge/ipcontroller_config.py",
-		"/Volumes/godel/.ipython/profile_moth/ipcontroller_config.py",
-		"/Volumes/godel/ipynb/gypsy_moth/hdfstorehelper.py",
-		"/Volumes/godel/.ipython/profile_huge/ipengine_config.py"
+		"/Users/chris/src/PolygenicAdaptationCode/Example/Genome_Data/match.file.txt"
 	],
 	"find":
 	{
-		"height": 25.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 95.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -580,6 +630,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"add",
+			"lists",
+			"/home/user",
+			"app",
+			"/home/user",
 			"slug",
 			".95ex",
 			"cloned surrogate",
@@ -612,6 +667,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"/home/docker"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -682,7 +738,7 @@
 	"project": "pineapp.sublime-project",
 	"replace":
 	{
-		"height": 46.0
+		"height": 66.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -691,6 +747,26 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"readm",
+				"pineapp_docker/README.md"
+			],
+			[
+				"make",
+				"pineapp_docker/makefile"
+			],
+			[
+				"readme",
+				"pineapp_docker/README.md"
+			],
+			[
+				"mak",
+				"pineapp_docker/makefile"
+			],
+			[
+				"ma",
+				"pineapp_docker/makefile"
+			],
 			[
 				"snpass",
 				"snpassoc_mass.R"
@@ -718,10 +794,6 @@
 			[
 				"session1",
 				"session1.tex"
-			],
-			[
-				"make",
-				"makefile"
 			],
 			[
 				"slides.te",

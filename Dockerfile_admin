@@ -1,0 +1,8 @@
+FROM cfriedline/base
+MAINTAINER Chris Friedline <cfriedline@vcu.edu>
+copy requirements.txt /home/docker/code/
+ENV PG_VERSION=9.4
+run apt-get install -y postgresql-server-dev-9.4 build-essential postgresql-client-9.4
+run pip install -r /home/docker/code/requirements.txt
+ENV PATH /usr/lib/postgresql/$PG_VERSION/bin:$PATH
+cmd bash
