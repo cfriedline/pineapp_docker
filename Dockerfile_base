@@ -1,8 +1,7 @@
 FROM debian:jessie
 MAINTAINER Chris Friedline <cfriedline@vcu.edu>
 RUN apt-get update && \
-apt-get dist-upgrade -y && \
-install vim wget bzip2 -y && \
+apt-get install vim wget bzip2 -y && \
 groupadd docker && \
 useradd docker -m -g docker -s /bin/bash
 volume /anaconda
