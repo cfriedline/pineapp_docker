@@ -19,45 +19,45 @@ build_dbdata:
 	docker create \
 	-v /dbdata \
 	--name dbdata \
-	ubuntu:15.04 \
+	debian:jessie \
 	/bin/bash
 
 build_appdata:
 	docker build \
-	-t cfriedline/appdata \
+	-t cfriedline/appdata:pineapp \
 	-f Dockerfile_appdata .
-	docker create --name appdata cfriedline/appdata
+	docker create --name appdata cfriedline/appdata:pineapp
 
 build_base:
 	docker build \
-	-t cfriedline/base:latest \
+	-t cfriedline/base:pineapp \
 	-f Dockerfile_base \
 	.
 
 build_web:
 	docker build \
-	-t cfriedline/web:latest \
+	-t cfriedline/web:pineapp \
 	-f Dockerfile_web \
 	.
 
 build_db:
 	docker build \
-	-t cfriedline/db:latest \
+	-t cfriedline/db:pineapp \
 	-f Dockerfile_db \
 	.
 
 build_admin:
 	docker build \
-	-t cfriedline/admin:latest \
+	-t cfriedline/admin:pineapp \
 	-f Dockerfile_admin \
 	.
 
 build_anaconda:
 	docker build \
-	-t cfriedline/anaconda:latest \
+	-t cfriedline/anaconda:2.2.0 \
 	-f Dockerfile_anaconda \
 	.
-	docker create --name anaconda cfriedline/anaconda
+	docker create --name anaconda cfriedline/anaconda:2.2.0
 
 setup: start_db start_web init_django copy_db restore_db restart
 
@@ -77,7 +77,7 @@ start_db:
 	--volumes-from dbdata \
 	--volumes-from anaconda \
 	-v /Users/chris:/mnt/tmp \
-	cfriedline/db:latest
+	cfriedline/db:pineapp
 
 start_web: 
 	./check_docker_container.sh web; \
@@ -89,7 +89,7 @@ start_web:
 	--link db:db \
 	--volumes-from appdata \
 	--volumes-from anaconda \
-	cfriedline/web:latest
+	cfriedline/web:pineapp
 
 start_admin:
 	./check_docker_container.sh admin; \
@@ -103,13 +103,12 @@ start_admin:
 	--volumes-from anaconda \
 	--link web:web \
 	--link db:db \
-	cfriedline/admin \
+	cfriedline/admin:pineapp \
 	/bin/bash
 
 restart: stop start
 
 bounce_web: stop_web start_web
-
 
 stop_web:
 	docker stop web
@@ -122,7 +121,7 @@ stop: stop_db stop_web
 init_django:
 	docker run -v /Users/chris/src:/mnt/src \
 	--volumes-from appdata \
-	cfriedline/web \
+	cfriedline/web:pineapp \
 	cp -r /mnt/src/pineapp /appdata
 
 copy_db:
