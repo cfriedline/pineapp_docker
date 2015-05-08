@@ -1,24 +1,15 @@
-from cfriedline/base:latest
-
+from cfriedline/base:pineapp
 maintainer Chris Friedline <cfriedline@vcu.edu>
-
-user root
-
-#run apt-get install -y build-essential git
 run apt-get install -y nginx supervisor postgresql-server-dev-9.4
-
 # setup all the configfiles
 volume /appdata
-
-run echo "daemon off;" >> /etc/nginx/nginx.conf
-run rm /etc/nginx/sites-enabled/default
-run ln -s /appdata/nginx-app.conf /etc/nginx/sites-enabled/
-run ln -s /appdata/supervisor-app.conf /etc/supervisor/conf.d/
-
 volume /anaconda
 ENV PATH /anaconda/bin:$PATH
-
-RUN rm -rf /var/lib/apt/lists/*
+run echo "daemon off;" >> /etc/nginx/nginx.conf && \
+rm /etc/nginx/sites-enabled/default && \
+ln -s /appdata/nginx-app.conf /etc/nginx/sites-enabled/ && \
+ln -s /appdata/supervisor-app.conf /etc/supervisor/conf.d/ && \
+rm -rf /var/lib/apt/lists/*
 expose 80
 cmd ["supervisord", "-n"]
 
