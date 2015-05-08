@@ -1,6 +1,5 @@
-from ubuntu:15.04
+from debian:jessie
 maintainer Chris Friedline <cfriedline@vcu.edu>
-user root
 run mkdir /appdata
 copy uwsgi.ini /appdata/
 copy uwsgi_params /appdata/
@@ -9,4 +8,4 @@ copy nginx-app.conf /appdata/
 copy supervisor-app.conf /appdata/
 copy docker-entrypoint.sh /appdata/
 volume /appdata
-cmd /bin/bash 
+cmd bash
