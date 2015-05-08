@@ -1,12 +1,10 @@
-FROM ubuntu:15.04
+FROM debian:jessie
 MAINTAINER Chris Friedline <cfriedline@vcu.edu>
-RUN apt-get update 
-RUN apt-get dist-upgrade -y
-RUN apt-get install vim wget bzip2 -y
-RUN groupadd docker
-RUN useradd docker -m -g docker -s /bin/bash
-
+RUN apt-get update && \
+apt-get dist-upgrade -y && \
+install vim wget bzip2 -y && \
+groupadd docker && \
+useradd docker -m -g docker -s /bin/bash
 volume /anaconda
 ENV PATH /anaconda/bin:$PATH
-
 cmd bash
