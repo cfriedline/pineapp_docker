@@ -1,22 +1,20 @@
-from ubuntu:15.04
+from debian:jessie
 maintainer Chris Friedline <cfriedline@vcu.edu>
-user root
-run mkdir /anaconda
-run apt-get update && apt-get install -y wget bzip2 git postgresql-server-dev-9.4 build-essential
-WORKDIR /anaconda
-RUN wget https://3230d63b5fc54e62148e-c95ac804525aac4b6dba79b00b39d1d3.ssl.cf1.rackcdn.com/Anaconda-2.2.0-Linux-x86_64.sh --no-check-certificate
-RUN bash Anaconda-2.2.0-Linux-x86_64.sh -b -f -p /anaconda
 ENV PATH /anaconda/bin:$PATH
-run conda update conda
-run conda update anaconda
 copy requirements.txt /tmp/
-workdir /tmp
-run pip install -r requirements.txt
-run git clone https://github.com/django-tastypie/django-tastypie.git
-workdir /tmp/django-tastypie
-run python setup.py install
-
+ENV PG_VERSION=9.4
+run apt-get update && \
+apt-get install -y wget bzip2 git postgresql-server-dev-$PG_VERSION build-essential && \
+wget https://3230d63b5fc54e62148e-c95ac804525aac4b6dba79b00b39d1d3.ssl.cf1.rackcdn.com/Anaconda-2.2.0-Linux-x86_64.sh --no-check-certificate && \
+bash Anaconda-2.2.0-Linux-x86_64.sh -b -f -p /anaconda && \
+conda update conda && \
+conda update anaconda && \
+cd /tmp && \
+pip install -r requirements.txt && \
+git clone https://github.com/django-tastypie/django-tastypie.git && \
+cd /tmp/django-tastypie && \
+python setup.py install && \
+apt-get purge -y --auto-remove build-essential git bzip2 wget && \
+rm -rf /var/lib/apt/lists/*
 volume /anaconda
-RUN rm -rf /var/lib/apt/lists/*
-
 cmd /bin/bash 
