@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"Popu",
+				"PopulationResource"
+			],
+			[
+				"Saple",
+				"SampleResource"
+			],
+			[
+				"Model",
+				"ModelResource"
+			],
+			[
+				"popul",
+				"population_resource"
+			],
+			[
+				"sample",
+				"sample_resource"
+			],
+			[
+				"Pop",
+				"PopulationResource"
+			],
+			[
 				"check",
 				"check_docker_container"
 			],
@@ -111,14 +135,10 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 138.0,
-		"last_filter": "push",
+		"height": 358.0,
+		"last_filter": "git com",
 		"selected_items":
 		[
-			[
-				"push",
-				"Git: Push"
-			],
 			[
 				"git com",
 				"Git: Commit"
@@ -128,19 +148,43 @@
 				"Git: Add Current File"
 			],
 			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"git upsh",
+				"Git: Push"
+			],
+			[
+				"git commt",
+				"Git: Commit"
+			],
+			[
 				"git ad",
 				"Git: Add Current File"
 			],
 			[
-				"comm",
-				"Git: Commit"
-			],
-			[
-				"pus",
+				"push",
 				"Git: Push"
 			],
 			[
-				"com",
+				"diff",
+				"Git: Diff Current File"
+			],
+			[
+				"comment",
+				"Toggle Block Comment"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git sta",
+				"Git: Status"
+			],
+			[
+				"git com	",
 				"Git: Commit"
 			],
 			[
@@ -148,11 +192,27 @@
 				"Git: Add..."
 			],
 			[
-				"git stat",
+				"com",
+				"Git: Commit"
+			],
+			[
+				"git status",
 				"Git: Status"
 			],
 			[
-				"git push",
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git statu",
+				"Git: Status"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"pus",
 				"Git: Push"
 			],
 			[
@@ -190,10 +250,6 @@
 			[
 				"upgrad",
 				"Package Control: Upgrade Package"
-			],
-			[
-				"comment",
-				"Toggle Comment"
 			],
 			[
 				"build",
@@ -316,10 +372,6 @@
 				"Git: Commit"
 			],
 			[
-				"git sta",
-				"Git: Status"
-			],
-			[
 				"pand",
 				"Pandoc"
 			],
@@ -362,10 +414,6 @@
 			[
 				"package ins",
 				"Package Control: Install Package"
-			],
-			[
-				"diff",
-				"Git: Diff Current File"
 			],
 			[
 				"instll",
@@ -480,18 +528,37 @@
 	[
 		"/Users/chris/src/pineapp_docker",
 		"/Users/chris/src/pineapp",
-		"/Users/chris/src/pineapp/pineapp"
+		"/Users/chris/src/pineapp/envdata",
+		"/Users/chris/src/pineapp/media",
+		"/Users/chris/src/pineapp/pineapp",
+		"/Users/chris/src/pineapp/static"
 	],
 	"file_history":
 	[
-		"/Users/chris/src/pineapp_docker/Dockerfile_base",
 		"/Users/chris/src/pineapp_docker/Dockerfile_db",
-		"/Users/chris/src/pineapp_docker/supervisor-app.conf",
+		"/Users/chris/ideg6_counts.txt",
+		"/Users/chris/Dropbox/Documents/science/postdoc/papers/black_spruce/.git/COMMIT_EDITMSG",
+		"/Users/chris/Dropbox/Documents/science/postdoc/papers/black_spruce/.gitignore",
+		"/Users/chris/src/pineapp_docker/.git/COMMIT_EDITMSG",
+		"/Users/chris/src/pineapp/pineapp/urls.py",
+		"/Users/chris/src/pineapp/envdata/models.py",
+		"/Users/chris/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/chris/src/pineapp/envdata/api.py",
+		"/Users/chris/src/pineapp_docker/requirements.txt",
 		"/Users/chris/src/pineapp_docker/Dockerfile_web",
 		"/Users/chris/src/pineapp_docker/Dockerfile_appdata",
+		"/Users/chris/src/pineapp_docker/Dockerfile_base",
+		"/Users/chris/src/pineapp_docker/Dockerfile_anaconda",
+		"/Users/chris/src/pineapp_docker/Dockerfile_admin",
 		"/Users/chris/src/pineapp_docker/makefile",
-		"/Users/chris/src/pineapp_docker/check_docker_container.sh",
+		"/Users/chris/src/pineapp/makefile",
 		"/Users/chris/src/pineapp/pineapp/settings.py",
+		"/Users/chris/src/pineapp/models.py",
+		"/Users/chris/src/pineapp/.gitignore",
+		"/Users/chris/src/pineapp/README.md",
+		"/Users/chris/src/pineapp/.git/COMMIT_EDITMSG",
+		"/Users/chris/src/pineapp_docker/supervisor-app.conf",
+		"/Users/chris/src/pineapp_docker/check_docker_container.sh",
 		"/Users/chris/src/pineapp_docker/README.md",
 		"/Users/chris/src/pineapp_docker/Dockerfile",
 		"/Users/chris/src/django-uwsgi-nginx/AUTHORS",
@@ -504,10 +571,8 @@
 		"/Users/chris/src/django-uwsgi-nginx/requirements.txt",
 		"/Users/chris/src/django-uwsgi-nginx/Dockerfile",
 		"/Users/chris/Dropbox/Documents/science/pineapp.backup",
-		"/Users/chris/src/pineapp_docker/.git/COMMIT_EDITMSG",
 		"/Users/chris/src/pineapp_docker/dockerfile",
 		"/Users/chris/src/pineapp_docker/docker-compose.yml",
-		"/Users/chris/src/pineapp_docker/requirements.txt",
 		"/Users/chris/src/pineapp_docker/pineapp/pineapp/settings.py",
 		"/Users/chris/Downloads/Torrents/win81.txt",
 		"/Users/chris/Dropbox/Documents/science/cv/.git/COMMIT_EDITMSG",
@@ -522,7 +587,6 @@
 		"/Users/chris/Downloads/bcftools-1.2/INSTALL",
 		"/Users/chris/src/git/.git/MERGE_MSG",
 		"/Users/chris/.zprezto/.git/COMMIT_EDITMSG",
-		"/Users/chris/src/pineapp/makefile",
 		"/Users/chris/Dropbox/Documents/science/postdoc/gis/ipynb/gps/friedline_FL_2014.txt",
 		"/Users/chris/Dropbox/Documents/science/cv/.gitignore",
 		"/Users/chris/Dropbox/Documents/science/cv/moderncvstyleclassic.sty",
@@ -537,9 +601,7 @@
 		"/Users/chris/Dropbox/Documents/science/postdoc/papers/black_spruce/revigo_cambium-all.txt",
 		"/Users/chris/.ssh/config",
 		"/Users/chris/Downloads/GraphCGW_T (1).C",
-		"/Users/chris/Dropbox/Documents/science/postdoc/papers/black_spruce/.git/COMMIT_EDITMSG",
 		"/Users/chris/Dropbox/Documents/science/postdoc/papers/black_spruce/blast2go_graph_20150402_1137_cambium.bp.txt",
-		"/Users/chris/Dropbox/Documents/science/postdoc/papers/black_spruce/.gitignore",
 		"/Users/chris/Dropbox/Documents/science/postdoc/papers/black_spruce/blast2go_annot_20150330_1039.annot",
 		"/Users/chris/Dropbox/Documents/science/postdoc/papers/black_spruce/blast2go_annotdescriptions_20150402_1059.txt",
 		"/Users/chris/Dropbox/Documents/science/postdoc/papers/black_spruce/blast2go_gff_export_20150402_1100.gff",
@@ -600,18 +662,7 @@
 		"/Volumes/congen/.zcompdump",
 		"/Volumes/congen/.zhistory",
 		"/Volumes/congen/.zlogin",
-		"/Volumes/congen/.zlogout",
-		"/Volumes/congen/.zpreztorc",
-		"/Volumes/congen/.zprofile",
-		"/Volumes/congen/.zshenv",
-		"/Users/chris/anaconda/envs/conda/lib/python2.7/site-packages/ipython-3.0.0.dist-info/top_level.txt",
-		"/private/var/folders/_8/hgx0kq1j3m10dyjq912_943c0000gn/T/ca465832-5a2e-426d-9b2c-75f6feaf8e1f/gdc_home4/cfried/.ipython/profile_gdcsrv2/ipengine_config.py",
-		"/private/var/folders/_8/hgx0kq1j3m10dyjq912_943c0000gn/T/ca465832-5a2e-426d-9b2c-75f6feaf8e1f/gdc_home4/cfried/.ipython/profile_gdcsrv2/ipcluster_config.py",
-		"/Users/chris/.hem/profile/congen",
-		"/Users/chris/Downloads/landscape_genetics_data/README.txt",
-		"/Users/chris/Dropbox/Documents/science/congenomics_2015/slides/bayenv.txt",
-		"/Users/chris/src/PolygenicAdaptationCode/Example/Genome_Data/genome.file.txt",
-		"/Users/chris/src/PolygenicAdaptationCode/Example/Genome_Data/match.file.txt"
+		"/Volumes/congen/.zlogout"
 	],
 	"find":
 	{
@@ -748,12 +799,28 @@
 		"selected_items":
 		[
 			[
-				"readm",
-				"pineapp_docker/README.md"
-			],
-			[
 				"make",
 				"pineapp_docker/makefile"
+			],
+			[
+				"amke",
+				"pineapp_docker/makefile"
+			],
+			[
+				"web",
+				"pineapp_docker/Dockerfile_web"
+			],
+			[
+				"makef",
+				"pineapp_docker/makefile"
+			],
+			[
+				"makefi",
+				"pineapp_docker/makefile"
+			],
+			[
+				"readm",
+				"pineapp_docker/README.md"
 			],
 			[
 				"readme",
@@ -824,12 +891,12 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"last_filter": "",
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"select_symbol":
 	{
