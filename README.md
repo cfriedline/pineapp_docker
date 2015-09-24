@@ -8,7 +8,7 @@
 
 `make init` or `make`
 
-You may also have to create /anaconda on your docker host, and chwon to the user running docker, if not root
+You may also have to create /anaconda on your docker host, and chown to the user running docker, if not root
 
 ##Run
 
